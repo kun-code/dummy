@@ -1,0 +1,26 @@
+.heart {
+    width: 900px;
+    height: 500px;
+    background: url("../hearts.gif");
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    
+    &.is-active {
+      transition-duration: 1s;
+      background-position: -2800px 0;
+    }
+  }
+  
+  .stage {
+    position: fixed;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+  }
